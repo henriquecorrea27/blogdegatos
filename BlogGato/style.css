@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: hsl(0, 0%, 100%);
+  --color-base-blue: #065d7a;
+  --color-base-grey-800: #202024;
+  --color-base-grey-900: #121212;
+}
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  width: 43rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 7.2rem;
+  background-color: var(--color-base-blue);
+
+  display: flex;
+  padding: 1.6rem 2.8rem;
+
+  gap: 1.6rem;
+
+  align-items: center;
+  justify-content: center;
+}
+
+header input {
+  width: 24rem;
+  height: 4rem;
+
+  background-color: #457a8b;
+
+  color: var(--color-base-white);
+
+  font-size: 1.6rem;
+
+  border: 0;
+
+  border-radius: 0.4rem;
+
+  padding: 1.2rem;
+}
+
+header input::placeholder {
+  color: #d3d3d3;
+}
+
+.main2 {
+  padding: 3.2rem 2.4rem;
+}
+
+.main h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  color: var(--color-base-grey-800);
+}
+
+.main p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--color-base-grey-900);
+}
+
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.margin {
+  margin-top: 3rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  margin-top: 3.2rem;
+}
+
+.sidebar h1 {
+  color: var(--color-base-grey-800);
+  font-size: 2.4rem;
+
+  font-weight: 700;
+}
+
+.sidebar h2 {
+  color: var(--color-base-grey-800);
+  font-size: 1.8rem;
+
+  font-weight: 700;
+}
+
+.sidebar p {
+  color: var(--color-base-grey-900);
+  font-size: 1.4rem;
+
+  font-weight: 400;
+}
+
+.sidebar .imgtext {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.sidebar .imgtext .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+footer {
+  height: 6.4rem;
+  background-color: var(--color-base-blue);
+
+  padding: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-base-white);
+}
+
+footer p {
+  font-size: 1.6rem;
+
+  font-weight: 600;
+}
+
+@media (min-width: 1100px) {
+  body {
+    width: 100%;
+  }
+
+  main {
+    padding: 4.2rem 11rem;
+  }
+  .main2 {
+    display: grid;
+    grid-template-columns: 68% 32%;
+
+    column-gap: 3.2rem;
+  }
+
+  .sidebar {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .main img {
+    width: 100%;
+  }
+
+  header input {
+    width: 110rem;
+    height: 4rem;
+  }
+}
